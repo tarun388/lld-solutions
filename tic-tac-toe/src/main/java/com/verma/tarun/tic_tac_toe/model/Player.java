@@ -1,6 +1,6 @@
-package com.verma.tarun.model;
+package com.verma.tarun.tic_tac_toe.model;
 
-import com.verma.tarun.model.piece.Piece;
+import com.verma.tarun.tic_tac_toe.model.piece.Piece;
 
 public class Player {
     private Piece piece;

@@ -1,8 +1,8 @@
-package com.verma.tarun.engine;
+package com.verma.tarun.tic_tac_toe.engine;
 
-import com.verma.tarun.model.Move;
-import com.verma.tarun.model.board.Board;
-import com.verma.tarun.model.piece.Piece;
+import com.verma.tarun.tic_tac_toe.model.Move;
+import com.verma.tarun.tic_tac_toe.model.board.Board;
+import com.verma.tarun.tic_tac_toe.model.piece.Piece;
 
 public class GameBoardValidator {
     private Board board;

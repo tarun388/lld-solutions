@@ -1,4 +1,4 @@
-package com.verma.tarun.model.piece;
+package com.verma.tarun.tic_tac_toe.model.piece;
 
 public enum PieceType {
     X("X"),

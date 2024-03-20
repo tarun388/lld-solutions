@@ -1,14 +1,14 @@
-package com.verma.tarun.model;
+package com.verma.tarun.tic_tac_toe.model;
 
-import com.verma.tarun.model.piece.Piece;
+import com.verma.tarun.tic_tac_toe.model.piece.Piece;
 
 public class Move {
     private Piece piece;
     private int row;
     private int col;
-    private com.verma.tarun.model.Player playedBy;
+    private Player playedBy;
 
-    public Move(Piece piece, int row, int col, com.verma.tarun.model.Player playedBy) {
+    public Move(Piece piece, int row, int col, Player playedBy) {
         this.piece = piece;
         this.row = row;
         this.col = col;
@@ -27,7 +27,7 @@ public class Move {
         return col;
     }
 
-    public com.verma.tarun.model.Player getPlayedBy() {
+    public Player getPlayedBy() {
         return playedBy;
     }
 }

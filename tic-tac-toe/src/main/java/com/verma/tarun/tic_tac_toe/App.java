@@ -1,9 +1,9 @@
-package com.verma.tarun;
+package com.verma.tarun.tic_tac_toe;
 
-import com.verma.tarun.engine.Game;
-import com.verma.tarun.model.Player;
-import com.verma.tarun.model.piece.PieceO;
-import com.verma.tarun.model.piece.PieceX;
+import com.verma.tarun.tic_tac_toe.engine.Game;
+import com.verma.tarun.tic_tac_toe.model.Player;
+import com.verma.tarun.tic_tac_toe.model.piece.PieceO;
+import com.verma.tarun.tic_tac_toe.model.piece.PieceX;
 
 public class App {
     public static void main(String[] args) {

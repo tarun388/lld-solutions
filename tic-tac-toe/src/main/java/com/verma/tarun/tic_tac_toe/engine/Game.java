@@ -1,10 +1,10 @@
-package com.verma.tarun.engine;
+package com.verma.tarun.tic_tac_toe.engine;
 
-import com.verma.tarun.model.Move;
-import com.verma.tarun.model.Player;
-import com.verma.tarun.model.board.Board;
-import com.verma.tarun.model.board.BoardView;
-import com.verma.tarun.model.board.ConsoleBoardView;
+import com.verma.tarun.tic_tac_toe.model.Move;
+import com.verma.tarun.tic_tac_toe.model.Player;
+import com.verma.tarun.tic_tac_toe.model.board.Board;
+import com.verma.tarun.tic_tac_toe.model.board.BoardView;
+import com.verma.tarun.tic_tac_toe.model.board.ConsoleBoardView;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -14,11 +14,11 @@ public class Game {
     private Deque<Player> players;
     private final Board board;
     private BoardView view;
-    private com.verma.tarun.engine.GameBoardValidator validator;
+    private GameBoardValidator validator;
 
     public Game() {
         board = new Board(3);
-        validator = new com.verma.tarun.engine.GameBoardValidator(board);
+        validator = new GameBoardValidator(board);
         view = new ConsoleBoardView(board);
         players = new ArrayDeque<>();
     }

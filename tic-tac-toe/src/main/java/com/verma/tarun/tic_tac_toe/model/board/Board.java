@@ -1,7 +1,7 @@
-package com.verma.tarun.model.board;
+package com.verma.tarun.tic_tac_toe.model.board;
 
-import com.verma.tarun.model.Move;
-import com.verma.tarun.model.piece.Piece;
+import com.verma.tarun.tic_tac_toe.model.Move;
+import com.verma.tarun.tic_tac_toe.model.piece.Piece;
 
 public class Board {
     private int size;

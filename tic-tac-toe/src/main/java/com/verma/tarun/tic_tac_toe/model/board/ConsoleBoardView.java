@@ -1,11 +1,11 @@
-package com.verma.tarun.model.board;
+package com.verma.tarun.tic_tac_toe.model.board;
 
-import com.verma.tarun.model.piece.Piece;
+import com.verma.tarun.tic_tac_toe.model.piece.Piece;
 
-public class ConsoleBoardView implements com.verma.tarun.model.board.BoardView {
-    private com.verma.tarun.model.board.Board board;
+public class ConsoleBoardView implements BoardView {
+    private Board board;
 
-    public ConsoleBoardView(com.verma.tarun.model.board.Board board) {
+    public ConsoleBoardView(Board board) {
         this.board = board;
     }
 
