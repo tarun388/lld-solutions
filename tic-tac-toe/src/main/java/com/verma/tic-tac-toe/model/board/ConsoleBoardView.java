@@ -2,10 +2,10 @@ package com.verma.tarun.model.board;
 
 import com.verma.tarun.model.piece.Piece;
 
-public class ConsoleBoardView implements BoardView {
-    private Board board;
+public class ConsoleBoardView implements com.verma.tarun.model.board.BoardView {
+    private com.verma.tarun.model.board.Board board;
 
-    public ConsoleBoardView(Board board) {
+    public ConsoleBoardView(com.verma.tarun.model.board.Board board) {
         this.board = board;
     }
 

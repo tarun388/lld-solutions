@@ -14,11 +14,11 @@ public class Game {
     private Deque<Player> players;
     private final Board board;
     private BoardView view;
-    private GameBoardValidator validator;
+    private com.verma.tarun.engine.GameBoardValidator validator;
 
     public Game() {
         board = new Board(3);
-        validator = new GameBoardValidator(board);
+        validator = new com.verma.tarun.engine.GameBoardValidator(board);
         view = new ConsoleBoardView(board);
         players = new ArrayDeque<>();
     }

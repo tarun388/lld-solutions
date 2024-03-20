@@ -6,9 +6,9 @@ public class Move {
     private Piece piece;
     private int row;
     private int col;
-    private Player playedBy;
+    private com.verma.tarun.model.Player playedBy;
 
-    public Move(Piece piece, int row, int col, Player playedBy) {
+    public Move(Piece piece, int row, int col, com.verma.tarun.model.Player playedBy) {
         this.piece = piece;
         this.row = row;
         this.col = col;
@@ -27,7 +27,7 @@ public class Move {
         return col;
     }
 
-    public Player getPlayedBy() {
+    public com.verma.tarun.model.Player getPlayedBy() {
         return playedBy;
     }
 }
