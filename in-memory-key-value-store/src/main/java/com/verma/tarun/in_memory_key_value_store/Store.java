@@ -42,4 +42,12 @@ public class Store {
         });
         map.put(key, value);
     }
+
+    public void delete(String key) {
+        map.remove(key);
+    }
+
+    public List<String> keys() {
+        return map.keySet().stream().toList();
+    }
 }
