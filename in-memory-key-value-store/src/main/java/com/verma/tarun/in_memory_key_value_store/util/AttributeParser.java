@@ -1,6 +1,7 @@
 package com.verma.tarun.in_memory_key_value_store.util;
 
 import com.verma.tarun.in_memory_key_value_store.model.Attribute;
+import com.verma.tarun.in_memory_key_value_store.model.AttributeType;
 import com.verma.tarun.in_memory_key_value_store.model.BooleanAttribute;
 import com.verma.tarun.in_memory_key_value_store.model.DoubleAttribute;
 import com.verma.tarun.in_memory_key_value_store.model.IntegerAttribute;
@@ -46,5 +47,16 @@ public class AttributeParser {
         catch (NumberFormatException e) {
             return false;
         }
+    }
+
+    public AttributeType getAttributeType(String value) {
+        if (isInteger(value)) {
+            return AttributeType.INTEGER;
+        } else if (isDouble(value)) {
+            return AttributeType.DOUBLE;
+        } else if (isBoolean(value)) {
+            return AttributeType.BOOLEAN;
+        }
+        return AttributeType.STRING;
     }
 }

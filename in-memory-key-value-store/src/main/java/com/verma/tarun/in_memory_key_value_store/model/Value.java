@@ -1,7 +1,9 @@
 package com.verma.tarun.in_memory_key_value_store.model;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class Value {
     private Map<String, Attribute> map;
@@ -25,5 +27,9 @@ public class Value {
 
     public boolean hasKeyValuePair(String attributeKey, String attributeValue) {
         return map.containsKey(attributeKey) && map.get(attributeKey).equals(attributeValue);
+    }
+
+    public Set<String> getKeys() {
+        return map.keySet();
     }
 }

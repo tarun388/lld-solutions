@@ -8,8 +8,12 @@ public class App {
     public static void main(String[] args) {
         Store store = new Store();
 
-        store.put("a", List.of(new Pair<>("a", "1")));
-        store.put("b", List.of(new Pair<>("a", "2")));
+        try {
+            store.put("a", List.of(new Pair<>("a", "1")));
+            store.put("b", List.of(new Pair<>("a", "2")));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         System.out.println(store.get("a"));
         System.out.println(store.search("a", "1"));
